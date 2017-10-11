@@ -16,6 +16,10 @@
     "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",
+    "three": "^0.87.1",
     "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
