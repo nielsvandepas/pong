@@ -1,6 +1,13 @@
 console.log('Starting server…');
 
-const io = require('socket.io')(3000);
+// Create a new HTTP server to piggyback Socket.io on
+const server = require('http').createServer();
+
+const io = require('socket.io')(server, {
+	path: '/'
+});
+
+server.listen(3000);
 
 const maxConnections = 2;
 let currentConnections = 0;
