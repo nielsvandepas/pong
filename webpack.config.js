@@ -22,7 +22,7 @@ module.exports = {
 			// ./public directory is being served
 			host: 'localhost',
 			port: 3000,
-			server: { baseDir: ['./'] }
+			server: { baseDir: ['./public'] }
 		})
 	]
 };
