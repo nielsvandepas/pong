@@ -24,8 +24,13 @@ io.on('connection', (socket) => {
 
 	console.log(`Current connection count: ${ ++currentConnections }/${ maxConnections }`);
 
-	if (currentConnections == maxConnections)
+	if (currentConnections == maxConnections) {
 		io.emit('ready');
+
+		setTimeout(() => {
+			io.emit('start');
+		}, 5000);
+	}
 
 	socket.on('message', (message) => {
 		console.log(message);
