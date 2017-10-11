@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate",
+  "name": "pong",
   "version": "1.0.0",
-  "description": "An ES8 boilerplate",
-  "main": "index.js",
+  "description": "My take on the godfather of video games",
+  "main": "server/server.es6",
   "scripts": {
     "start": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"

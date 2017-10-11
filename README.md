@@ -1,3 +1,3 @@
-# Boilerplate
+# Four Player Pong
 
-The casual ES8 boilerplate.
+My take on the godfather of video games.
